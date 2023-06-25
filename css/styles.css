@@ -1,0 +1,511 @@
+/* CSS to remove unnecessary default properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS for the font style */
+html {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+/* CSS for the Navbar */
+nav {
+  width: 100%;
+  height: 4.7em;
+  overflow: hidden;
+}
+.navBar {
+  position: fixed;
+  width: 100%;
+  height: 4.7em;
+  padding: 1em;
+  display: flex;
+  overflow: hidden;
+  background-color: rgb(249, 253, 255);
+}
+.navBar-logoInfo {
+  float: left;
+  margin-left: 10em;
+  margin-right: 2em;
+}
+
+.navBar-pageAccess {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.navBar-userAccess {
+  width: 12.5%;
+  height: 2.7em;
+  float: right;
+  margin-left: 2em;
+  margin-right: 3em;
+}
+
+.navBar-pageAccess,
+.navBar-userAccess {
+  margin-top: 0.5em;
+}
+
+.navBar-logoInfo,
+.navBar-pageAccess,
+.dropDown,
+.dropDown-content,
+.navBar-userAccess {
+  display: inline;
+}
+
+.myUrls,
+.features,
+.pricing,
+.analytics,
+.faq {
+  font-size: 1.1em;
+  margin: 0.3em 2.5em;
+}
+
+.navBar-userAccess-login-btn,
+.navBar-userAccess-tryFree-btn {
+  width: 8em;
+  height: 2.6em;
+  border-radius: 2em;
+  font-size: 0.9em;
+}
+
+.navBar-userAccess-login-btn {
+  float: left;
+  background: none;
+  border: none;
+  color: rgb(8, 73, 170);
+}
+
+.navBar-userAccess-tryFree-btn {
+  float: right;
+  color: whitesmoke;
+  background-color: rgb(8, 73, 170);
+  border: none;
+}
+
+.navBar-userAccess-login-btn:hover {
+  color: whitesmoke;
+  background-color: rgb(8, 73, 170);
+}
+
+.navBar-userAccess-tryFree-btn:hover {
+  background-color: whitesmoke;
+  color: rgb(8, 73, 170);
+  border: 1px solid rgb(8, 73, 170);
+}
+
+/* CSS - Removing the outline of the select element with the name = feature-dropDown */
+select[class="features"] option {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* CSS for all span and a/link occurrence */
+span,
+a {
+  color: rgb(8, 73, 170);
+}
+
+/* CSS importing a background image */
+.container-myUrls {
+  background: url("../images/img-4.svg") no-repeat;
+}
+
+/* CSS for removing default summary icon & replace with "+" & "-" */
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: " + ";
+}
+details[open] summary::after {
+  content: " - ";
+}
+
+/* CSS for all a/link behavior */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* CSS for Home section */
+.container-home-header {
+  width: 70%;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  text-align: center;
+}
+
+.container-home-header h1 {
+  padding: 18px 3px;
+}
+
+img[alt="line-underlining-URL-image"] {
+  width: 8em;
+  margin-left: 1em;
+  margin-top: -5em;
+}
+
+.container-home-content {
+  width: 50%;
+  margin: 35px auto;
+  font-size: 1.4em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.container-home-btn {
+  width: 20%;
+  height: 3em;
+  margin: 5em auto;
+}
+
+.home-signUp-btn,
+.home-learnMore-btn {
+  width: 10em;
+  height: 3em;
+  border-radius: 35px;
+  font-size: 18px;
+}
+
+.home-signUp-btn {
+  float: left;
+  color: whitesmoke;
+  background-color: rgb(8, 73, 170);
+  border: none;
+}
+.home-signUp-btn:hover {
+  color: rgb(8, 73, 170);
+  background-color: whitesmokesmoke;
+}
+
+.home-learnMore-btn {
+  float: right;
+  background: none;
+  border: none;
+  color: rgb(8, 73, 170);
+}
+.home-learnMore-btn:hover {
+  color: whitesmoke;
+  background-color: rgb(8, 73, 170);
+}
+
+/* CSS for MyURL Section */
+.container-myUrls {
+  width: 100%;
+  height: 15em;
+  margin: 0;
+  background-size: 14em;
+  background-position: relative;
+  background-position-x: 40em;
+}
+
+.myUrls-div {
+  width: 47%;
+  height: 13em;
+  margin: auto;
+  margin-left: 40em;
+  padding: 2em 2em;
+  border: 1px solid rgb(140, 182, 246);
+  border-radius: 10px;
+  background-color: rgb(222, 222, 222);
+  background-image: linear-gradient(to left, whitesmoke, rgb(246, 251, 255));
+}
+
+img[alt="link-image"] {
+  width: 16em;
+  height: 3.5em;
+  padding: 0;
+  margin-bottom: 1.5em;
+}
+
+.myUrls-writeUp {
+  width: 100%;
+  font-size: 1.1em;
+  text-align: center;
+  padding-left: 12em;
+  padding-right: 12em;
+  line-height: 1.5em;
+}
+
+/* CSS for Analytics Section*/
+.container-analytics {
+  width: 99%;
+  height: 15em;
+  display: flex;
+  margin: 3.5em auto;
+  padding-top: 4em;
+  margin-bottom: 2em;
+  padding-left: 10.5em;
+  background-color: rgb(231, 241, 250);
+}
+
+.analytics-info {
+  width: 20em;
+  margin-right: 5em;
+  font-size: 1.7em;
+}
+
+.analytics-dataVirtual-3m,
+.analytics-dataVirtual-60m {
+  width: 9em;
+}
+
+.analytics-dataVirtual-1b,
+.analytics-dataVirtual-300k {
+  width: 11em;
+}
+
+.analytics-dataVirtual-3m,
+.analytics-dataVirtual-60m,
+.analytics-dataVirtual-1b,
+.analytics-dataVirtual-300k {
+  margin-right: 7em;
+  font-size: 1.2em;
+}
+
+.analytics-dataVirtual-3m p,
+.analytics-dataVirtual-60m p,
+.analytics-dataVirtual-1b p,
+.analytics-dataVirtual-300k p {
+  padding-top: 0.4em;
+}
+
+/* CSS for Features Section */
+.container-feature {
+  width: 100%;
+  display: flex;
+  padding-top: 9em;
+  padding-left: 11em;
+}
+
+.feature-info {
+  width: 20em;
+  font-size: 1.8em;
+  margin-right: 2em;
+}
+
+.feature-info h1 {
+  padding: 0.2em 1em 0.2 1em;
+}
+
+.feature-info p {
+  font-size: 0.6em;
+  line-height: 1.7em;
+  padding: 0 1em 0 1em;
+}
+
+.feature-listing {
+  width: 60em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+.feature-listing-urlShortening,
+.feature-listing-customUrl,
+.feature-listing-qrCodes,
+.feature-listing-dataAnalytics {
+  width: 21em;
+}
+
+.feature-listing-urlShortening h1,
+.feature-listing-customUrl h1,
+.feature-listing-qrCodes h1,
+.feature-listing-dataAnalytics h1 {
+  margin: 0.5em auto;
+}
+
+/* CSS for Pricing Section */
+.container-pricing-header {
+  width: 50%;
+  margin: 10em auto;
+  text-align: center;
+}
+
+.container-pricing-header h1 {
+  font-size: 3.5em;
+}
+
+.container-pricing-header p {
+  font-size: 1.3em;
+  margin-top: 0.5em;
+  padding: 0 5.5em;
+}
+
+.container-pricing-listing {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-listing {
+  list-style-type: none;
+}
+
+img[alt="validation-image"] {
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+.pricing-listing-card-1,
+.pricing-listing-card-2,
+.pricing-listing-card-3 {
+  width: 22em;
+  line-height: 2.7em;
+  font-size: 1.2em;
+  border: 1px solid rgb(149, 187, 244);
+  padding-left: 4em;
+}
+
+.pricing-listing-card-1 {
+  padding-top: 2em;
+  border-radius: 0.5em 0 0 0.5em;
+  margin-right: -2em;
+  height: 26em;
+}
+
+.pricing-listing-card-3 {
+  padding-top: 2em;
+  border-radius: 0 0.5em 0.5em 0;
+  margin-left: -2em;
+  z-index: -1;
+  height: 26em;
+}
+
+.pricing-listing-card-2 {
+  padding-top: 3em;
+  color: whitesmoke;
+  background-color: rgb(3, 26, 66);
+  height: 33em;
+  border-radius: 0.5em;
+}
+
+.pricing-btn-container {
+  width: 26em;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+
+button[name="custom-pricing-btn"],
+button[name="select-pricing-btn"] {
+  width: 11em;
+  height: 3em;
+  margin-top: 4em;
+  margin-bottom: 15em;
+  border-radius: 2em;
+  font-size: 1.1em;
+}
+
+button[name="custom-pricing-btn"] {
+  float: left;
+  background: none;
+  border: 1px solid rgb(8, 73, 170);
+  color: rgb(8, 73, 170);
+}
+
+button[name="select-pricing-btn"] {
+  float: right;
+  color: whitesmoke;
+  background-color: rgb(8, 73, 170);
+  border: none;
+}
+
+button[name="custom-pricing-btn"]:hover {
+  color: whitesmoke;
+  background-color: rgb(8, 73, 170);
+}
+
+button[name="select-pricing-btn"]:hover {
+  color: rgb(8, 73, 170);
+  background-color: whitesmoke;
+  border: 1px solid rgb(8, 73, 170);
+}
+
+/* CSS for Frequently Asked Questions */
+
+.container-faq-sub {
+  width: 100%;
+  height: 32em;
+  background-color: rgb(24, 48, 69);
+  background-image: url();
+  margin-top: 16em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+form {
+  display: block;
+  width: 30%;
+  height: 22em;
+  margin: 2em auto;
+  padding-left: 5em;
+  background-color: whitesmoke;
+  border: 1px solid rgb(8, 73, 170);
+  border-radius: 0.8em;
+}
+
+.form-element {
+  width: 30.5em;
+  height: 3em;
+  border: 1px solid rgb(8, 73, 170);
+  border-radius: 0.8em;
+  padding: 1em;
+}
+
+.adjForm-element {
+  width: 25.4em;
+  height: 2.7em;
+}
+
+.adj-width {
+  width: 14em;
+  height: 3em;
+  border: 1px solid rgb(8, 73, 170);
+  border-radius: 0.8em;
+  padding: 0.8em;
+}
+
+.adjForm-element select {
+  float: left;
+}
+
+.adjForm-element input {
+  float: right;
+}
+
+.form-instruct-policy {
+  width: 26em;
+  font-size: 0.8em;
+  color:rgb(8, 73, 170) ;
+}
+
+.spacing-form-element {
+  margin-bottom: 2em;
+}
+
+.form-element-button {
+  height: 3.5em;
+  background-color: rgb(8, 73, 170);
+  color: whitesmoke;
+}
