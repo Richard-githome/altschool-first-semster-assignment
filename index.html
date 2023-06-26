@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>SCISSOR</title>
     <script
       src="https://kit.fontawesome.com/986ef44405.js"
@@ -73,6 +73,11 @@
         </div>
       </div>
       <div id="analytics" class="container-analytics">
+      <img src="../images/img14.svg" alt="img14" />
+      <!-- <img src="../images/img13.svg" alt="img13" /> -->
+      </div>
+
+      <div class="container-analytics-sub">
         <div class="analytics-info">
           <h1>One Stop</h1>
           <h1>Four <span>Possibilities</span>.</h1>
@@ -260,11 +265,7 @@
               placeholder="Paste URL here..."
             />
             <div class="adjForm-element spacing-form-element">
-              <select
-                class=" adj-width"
-                name="select-domain"
-                id="select-domain"
-              >
+              <select class="adj-width" name="select-domain" id="select-domain">
                 <option value="">Choose Domain</option>
               </select>
               <input
@@ -273,177 +274,204 @@
                 placeholder="Type Alias here"
               />
             </div>
-            <button class="form-element spacing-form-element form-element-button ">
+            <button
+              class="form-element spacing-form-element form-element-button"
+            >
               Trim URL <img src="../images/img-20.svg" alt="Trim-URL-icon" />
             </button>
             <!-- <div> -->
-              <p class="form-instruct-policy">
-                By clicking TrimURL,I agree to the
-                <strong>Term of Service, Privacy Policy</strong> and Use of
-                Cookies.
-              </p>
+            <p class="form-instruct-policy">
+              By clicking TrimURL,I agree to the
+              <strong>Term of Service, Privacy Policy</strong> and Use of
+              Cookies.
+            </p>
             <!-- </div> -->
           </form>
         </div>
       </div>
       <div class="faq-listing-container">
-        <h1>FAQs</h1>
-        <details>
-          <summary>How does URL shortening works?</summary>
-          <p>
-            URL shortening works by taking a long URL and creating a shorter,
-            condensed version that redirects to the original URL. When a user
-            clicks on the shortened link, they are redirected to the intended
-            destination.
-          </p>
-        </details>
-        <details>
-          <summary>
-            Is it necessary to create an account to use the URL shortening
-            service?
-          </summary>
-          <p>Yes, It is!</p>
-        </details>
-        <details>
-          <summary>
-            Are the shortened links permanent? Will they expire?
-          </summary>
-          <p>Not sure about that though. Hope Mr. Setemi will answer that.</p>
-        </details>
-        <details>
-          <summary>
-            Are there any limitations on the number of URLs i can shorten?
-          </summary>
-          <p>I guess it depends on your subscription package.</p>
-        </details>
-        <details>
-          <summary>
-            Can i customize the shortened URL to reflect my brand or content?
-          </summary>
-          <p>Most definitely! I think you can.</p>
-        </details>
-        <details>
-          <summary>Can i track the performance of my shortened URLs?</summary>
-          <p>Sure, it is part of our designed services to you.</p>
-        </details>
-        <details>
-          <summary>
-            How secure is the URL shortening service? Are the shortened links
-            protected agains spam or malicious activity?
-          </summary>
-          <p>
-            Your links and data protection is our utmost priority while doing
-            business with you.
-          </p>
-        </details>
-        <details>
-          <summary>What is a QR code and what can it do?</summary>
-          <p>
-            URL shortening works by taking a long URL and creating a shorter,
-            condensed version that redirects to the original URL. When a user
-            clicks on the shortened link, they are redirected to the intended
-            destination.
-          </p>
-        </details>
-        <details>
-          <summary>
-            Is there an API available for integrating the URL shortening service
-            into my own applications or websites?
-          </summary>
-          <p>Most definitely, we have all that serves you right.</p>
-        </details>
+        <div class="faq-listing-subcontainer">
+          <h1>FAQs</h1>
+          <div class="faq-card">
+            <details>
+              <summary>How does URL shortening works?</summary>
+              <p>
+                URL shortening works by taking a long URL and creating a
+                shorter, condensed version that redirects to the original URL.
+                When a user clicks on the shortened link, they are redirected to
+                the intended destination.
+              </p>
+            </details>
+          </div>
+          <div class="faq-card">
+            <details>
+              <summary>
+                Is it necessary to create an account to use the URL shortening
+                service?
+              </summary>
+              <p>Yes, It is!</p>
+            </details>
+          </div>
+          <div class="faq-card">
+            <details>
+              <summary>
+                Are the shortened links permanent? Will they expire?
+              </summary>
+              <p>
+                Not sure about that though. Hope Mr. Setemi will answer that.
+              </p>
+            </details>
+          </div>
+          <div class="faq-card">
+            <details>
+              <summary>
+                Are there any limitations on the number of URLs i can shorten?
+              </summary>
+              <p>I guess it depends on your subscription package.</p>
+            </details>
+          </div>
+          <div class="faq-card">
+            <details>
+              <summary>
+                Can i customize the shortened URL to reflect my brand or
+                content?
+              </summary>
+              <p>Most definitely! I think you can.</p>
+            </details>
+          </div>
+          <div class="faq-card">
+            <details>
+              <summary>
+                Can i track the performance of my shortened URLs?
+              </summary>
+              <p>Sure, it is part of our designed services to you.</p>
+            </details>
+          </div>
+          <div class="faq-card">
+            <details>
+              <summary>
+                How secure is the URL shortening service? Are the shortened
+                links protected agains spam or malicious activity?
+              </summary>
+              <p>
+                Your links and data protection is our utmost priority while
+                doing business with you.
+              </p>
+            </details>
+          </div>
+          <div class="faq-card">
+            <details>
+              <summary>What is a QR code and what can it do?</summary>
+              <p>
+                URL shortening works by taking a long URL and creating a
+                shorter, condensed version that redirects to the original URL.
+                When a user clicks on the shortened link, they are redirected to
+                the intended destination.
+              </p>
+            </details>
+          </div>
+          <div class="faq-card">
+            <details>
+              <summary>
+                Is there an API available for integrating the URL shortening
+                service into my own applications or websites?
+              </summary>
+              <p>Most definitely, we have all that serves you right.</p>
+            </details>
+          </div>
+        </div>
       </div>
       <div class="link-Ops-container">
         <h1>Revolutionizing Link Optimization</h1>
-        <button type="button" name="link-Ops-btn"></button>
+        <button type="button" name="link-Ops-btn">Get Started</button>
       </div>
       <!-- </div> -->
     </main>
+    <footer>
+      <div class="footer-info-socials">
+        <div class="footer-socials-container">
+          <div class="social-icon-head">
+            <a href="#home"
+              ><img src="../images/img-22.svg" alt="scissor-logo"
+            /></a>
+          </div>
+          <div class="social-icon-card">
+            <a class="media-icon twitter-icon" href="#"
+              ><i class="fa-brands fa-twitter fa-xl"></i
+            ></a>
+            <a class="media-icon instagram-icon" href="#"
+              ><i class="fa-brands fa-instagram fa-xl"></i
+            ></a>
+            <a class="media-icon linkedin-icon" href="#"
+              ><i class="fa-brands fa-linkedin fa-xl"></i
+            ></a>
+            <a class="media-icon facebook-icon" href="#"
+              ><i class="fa-brands fa-square-facebook fa-xl"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-all-info">
+          <div class="footer-info-whyScissor">
+            <h4>Why Scissor ?</h4>
+            <a class="block" href="#">Scissor 101</a>
+            <a class="block" href="#">Integrations & API</a>
+            <a class="block" href="#pricing">Pricing</a>
+          </div>
+          <div class="footer-info-solution">
+            <h4>solutions</h4>
+            <a class="block" href="#">Social Media</a>
+            <a class="block" href="#">Digital Marketing</a>
+            <a class="block" href="#">Customer Service</a>
+            <a class="block" href="#">For Developers</a>
+          </div>
+          <div class="footer-info-product">
+            <h4>Products</h4>
+            <a class="block" href="#">Link Management</a>
+            <a class="block" href="#">QR Codes</a>
+            <a class="block" href="#">Link-in-bio</a>
+          </div>
+          <div class="footer-info-company">
+            <h4>Company</h4>
+            <a class="block" href="#">About Scissor</a>
+            <a class="block" href="#">Career</a>
+            <a class="block" href="#">Partners</a>
+            <a class="block" href="#">Press</a>
+            <a class="block" href="#">Contact</a>
+            <a class="block" href="#">Reviews</a>
+          </div>
+          <div class="footer-info-resources">
+            <h4>Resources</h4>
+            <a class="block" href="#">Blog</a>
+            <a class="block" href="#">Resource Library</a>
+            <a class="block" href="#">Developers</a>
+            <a class="block" href="#">App Connectors</a>
+            <a class="block" href="#">Support</a>
+            <a class="block" href="#">Trust Center</a>
+            <a class="block" href="#">Browser Extension</a>
+            <a class="block" href="#">Mobile App</a>
+          </div>
+          <div class="footer-info-features">
+            <h4>Features</h4>
+            <a class="block" href="#">Branded Links</a>
+            <a class="block" href="#">Mobile Links</a>
+            <a class="block" href="#">Campaign</a>
+            <a class="block" href="#">Management &</a>
+            <a class="block" href="#">Analytics</a>
+            <a class="block" href="#">QR Code generation</a>
+          </div>
+          <div class="footer-info-legal">
+            <h4>Legal</h4>
+            <a class="block" href="#">Privacy Policy</a>
+            <a class="block" href="#">Cookie Policy</a>
+            <a class="block" href="#">Terms of Service</a>
+            <a class="block" href="#">Acceptable Use Policy</a>
+            <a class="block" href="#">Code of Conduct</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-termOfService-footnote">
+        <p>Term of Service | Security | Scissor 2023</p>
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div class="footer-info-socials">
-      <div class="footer-socials-container">
-        <div>
-          <a href="#home"
-            ><img src="../images/img-22.svg" alt="scissor-logo" /></a
-          >
-        </div>
-        <div class="social-icon-card">
-          <a class="media-icon twitter-icon" href="#"
-            ><i class="fa-brands fa-twitter fa-xl"></i
-          ></a>
-          <a class="media-icon instagram-icon" href="#"
-            ><i class="fa-brands fa-instagram fa-xl"></i
-          ></a>
-          <a class="media-icon linkedin-icon" href="#"
-            ><i class="fa-brands fa-linkedin fa-xl"></i
-          ></a>
-          <a class="media-icon facebook-icon" href="#"
-            ><i class="fa-brands fa-square-facebook fa-xl"></i
-          ></a>
-        </div>
-      </div>
-      <div class="footer-all-info">
-        <div class="footer-info-whyScissor">
-          <h4>Why Scissor ?</h4>
-          <a href="#">Scissor 101</a>
-          <a href="#">Integrations & API</a>
-          <a href="#pricing">Pricing</a>
-        </div>
-        <div class="footer-info-solution">
-          <h4>solutions</h4>
-          <a href="#">Social Media</a>
-          <a href="#">Digital Marketing</a>
-          <a href="#">Customer Service</a>
-          <a href="#">For Developers</a>
-        </div>
-        <div class="footer-info-product">
-          <h4>Products</h4>
-          <a href="#">Link Management</a>
-          <a href="#">QR Codes</a>
-          <a href="#">Link-in-bio</a>
-        </div>
-        <div class="footer-info-company">
-          <h4>Company</h4>
-          <a href="#">About Scissor</a>
-          <a href="#">Career</a>
-          <a href="#">Partners</a>
-          <a href="#">Press</a>
-          <a href="#">Contact</a>
-          <a href="#">Reviews</a>
-        </div>
-        <div class="footer-info-resources">
-          <h4>Resources</h4>
-          <a href="#">Blog</a>
-          <a href="#">Resource Library</a>
-          <a href="#">Developers</a>
-          <a href="#">App Connectors</a>
-          <a href="#">Support</a>
-          <a href="#">Trust Center</a>
-          <a href="#">Browser Extension</a>
-          <a href="#">Mobile App</a>
-        </div>
-        <div class="footer-info-features">
-          <h4>Features</h4>
-          <a href="#">Branded Links</a>
-          <a href="#">Mobile Links</a>
-          <a href="#">Campaign</a>
-          <a href="#">Management &</a>
-          <a href="#">Analytics</a>
-          <a href="#">QR Code generation</a>
-        </div>
-        <div class="footer-info-legal">
-          <h4>Legal</h4>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Acceptable Use Policy</a>
-          <a href="#">Code of Conduct</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-termOfService-footnote">
-      <p>Term of Service | Security | Scissor 2023</p>
-    </div>
-  </footer>
 </html>
